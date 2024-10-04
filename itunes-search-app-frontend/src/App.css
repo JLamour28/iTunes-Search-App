@@ -1,0 +1,116 @@
+/* Set the background color for the entire body */
+body {
+  background-color: #f8f9fa;
+}
+
+/*  main app container */
+.app-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 50px;
+}
+
+/*  app title */
+.app-title {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* search bar container */
+.search-bar {
+  background-color: #f1f3f5;
+  border-style: none;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/*  search input field */
+.search-input {
+  border-radius: 20px;
+}
+
+/* search button */
+.search-button {
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Set max height and enable vertical scrolling for results and favorites lists */
+.results-list, .favorites-list {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Add transition effect for list items */
+.list-group-item {
+  transition: background-color 0.3s;
+}
+
+/* Change background color on hover for list items */
+.list-group-item:hover {
+  background-color: #e6ebf0;
+}
+
+/* item images in the lists */
+.item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+/* item details container */
+.item-details {
+  flex-grow: 1;
+}
+
+/*  item name */
+.item-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* item artist */
+.item-artist {
+  font-size: 0.9em;
+  color: #6c757d;
+}
+
+/*  favorites section title */
+.favorites-title {
+  color: #105c88;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* add and remove favorite buttons */
+.add-favorite-btn, .remove-favorite-btn {
+  border-style: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+/* icons in add and remove favorite buttons */
+.add-favorite-btn i, .remove-favorite-btn i {
+  font-size: 1.2rem;
+}
+
+
+
+/*  responsive design on smaller screens */
+@media (max-width: 768px) {
+  .favorites-container {
+    margin-top: 30px;
+  }
+}
